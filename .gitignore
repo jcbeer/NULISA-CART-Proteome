@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Renviron
+.DS_Store
+data/private/
+renv/library/
+renv/staging/
+renv/sandbox/
+.claude/
