@@ -26,22 +26,32 @@ NULISA-CART-Proteome/
 │   ├── s08_survival_PFS_OS.R                # PFS and OS analysis
 │   └── s09_decouple_expansion_toxicity.R    # Decoupling analysis (Fig 6)
 ├── data/
-│   ├── private/                             # Patient-level data (.gitignored)
-│   └── public/                              # Aggregate outputs, swimmer plot & sample
-│       │                                    #   collection data (tracked in repo)
+│   └── public/                              # Aggregate outputs (tracked in repo)
 │       ├── swimmer_plot_data.xlsx
-│       └── sample_collection.xlsx
+│       ├── sample_collection.xlsx
+│       ├── LME_model_results.RData
+│       ├── LME_coefs_for_clustering.RData
+│       ├── cluster_results.RData
+│       ├── pathway_enrichment_results.RData
+│       ├── cox_model_results.RData
+│       └── decoupling_results.RData
 ├── figures/
-│   ├── main/
-│   └── extended_data/
+│   ├── main/                                # Main manuscript figures (PDFs)
+│   └── extended_data/                       # Extended data figures (PDFs)
 ├── supplementary_tables/
 │   ├── SuppTable1_protein_panel_annotation.xlsx
 │   ├── SuppTable2_LME_model_coefficients.xlsx
 │   ├── SuppTable3_cluster_assignments.xlsx
 │   ├── SuppTable4_pathway_enrichment.xlsx
 │   ├── SuppTable5_cox_PH_results.xlsx
-│   └── SuppTable6_decoupling_analysis.xlsx
-├── renv.lock
+│   ├── SuppTable6_decoupling_analysis.xlsx
+│   └── working/
+│       └── cluster_pathway_summary.xlsx
+├── renv/                                    # renv bootstrap files
+│   ├── activate.R
+│   └── settings.json
+├── renv.lock                                # renv lockfile for reproducibility
+├── .Rprofile                                # R startup configuration (loads renv)
 ├── .gitignore
 ├── LICENSE
 └── README.md
