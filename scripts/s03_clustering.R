@@ -59,10 +59,10 @@ cluster_config <- list(
     names = c(
       "Innate-to-Adaptive Bridge",  
       "Vascular & Neuro-Supportive Failure", 
-      "Dysregulated Repair Timing",  
+      "Dysregulated Repair",  
       "Exhaustion & Chronic Inflammation",   
       "Myeloid Resolution Failure",           
-      "Th1 Effector Hyper-Activation"         
+      "Th1/Th2 Effector Hyper-Activation"         
     ),
     display_order = c(1, 6, 4, 2, 5, 3)
   ),
@@ -70,12 +70,12 @@ cluster_config <- list(
   # --- ICANS × time interaction ---
   ICANS = list(
     names = c(
-      "Systemic Exhaustion & Barrier Stress",
-      "Early Neuro-Vascular Surge",
+      "Exhaustion & Chronic Inflammation",
+      "Effector Cytokine & Chemokine Activation",
       "Immune Checkpoint & Myeloid Remodeling",
-      "Persistent Neuro-Inflammation",
-      "Homeostatic & Niche Suppression",
-      "Innate Recruitment & Neuro-Recovery Failure"
+      "Neuroinflammation",
+      "Niche Homeostasis",
+      "Neuro-Recovery Failure"
     ),
     display_order = c(2, 1, 3, 4, 5, 6)
   ),
@@ -86,7 +86,7 @@ cluster_config <- list(
       "Exhaustion Management",                    
       "The Effector Engine",                     
       "Baseline Niche Displacement",         
-      "Antigen Presentation & Th1 Readiness",    
+      "Interferons & Cytotoxicity",    
       "Metabolic & Growth Support",             
       "Early Chemotaxis & Innate Priming"       
     ),
